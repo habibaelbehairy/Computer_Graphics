@@ -1,4 +1,4 @@
-# Install script for directory: E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/CircleDrawingAlgorithms
+# Install script for directory: E:/Computer_Graphics/CircleDrawingAlgorithms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/CircleDrawingAlgorithms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Computer_Graphics/CircleDrawingAlgorithms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

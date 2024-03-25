@@ -782,8 +782,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/CircleDrawingAlgorithms/cmake-build-debug",
-		"source" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/CircleDrawingAlgorithms"
+		"build" : "E:/Computer_Graphics/CircleDrawingAlgorithms/cmake-build-debug",
+		"source" : "E:/Computer_Graphics/CircleDrawingAlgorithms"
 	},
 	"version" : 
 	{

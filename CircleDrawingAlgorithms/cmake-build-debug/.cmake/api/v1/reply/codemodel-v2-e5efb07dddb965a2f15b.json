@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "LineDrawingAlgorithms",
+					"name" : "CircleDrawingAlgorithms",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "LineDrawingAlgorithms::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LineDrawingAlgorithms-Debug-3429e41d75d82658c1d4.json",
-					"name" : "LineDrawingAlgorithms",
+					"id" : "CircleDrawingAlgorithms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CircleDrawingAlgorithms-Debug-e05cbec5a5f99e1be2ae.json",
+					"name" : "CircleDrawingAlgorithms",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/LineDrawingAlgorithms/cmake-build-debug",
-		"source" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/LineDrawingAlgorithms"
+		"build" : "E:/Computer_Graphics/CircleDrawingAlgorithms/cmake-build-debug",
+		"source" : "E:/Computer_Graphics/CircleDrawingAlgorithms"
 	},
 	"version" : 
 	{

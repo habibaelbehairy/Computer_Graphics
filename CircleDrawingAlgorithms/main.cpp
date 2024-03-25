@@ -130,10 +130,10 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
         case WM_LBUTTONDBLCLK: // Handle double-click event
             xc=LOWORD(lParam);
             yc=HIWORD(lParam);
-            radius=50;
+            radius = sqrt(pow(xc-500, 2) + pow(yc-500, 2));
             hdc=GetDC(hwnd);
-//            DrawCircle(hdc, xc, yc, radius, RGB(0, 0, 0));
-//            DrawCirclePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
+//          DrawCircle(hdc, xc, yc, radius, RGB(0, 0, 0));
+//          DrawCirclePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
             DrawCircleIterativePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
             ReleaseDC(hwnd,hdc);
             break;
