@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LineDrawingAlgorithms",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LineDrawingAlgorithms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LineDrawingAlgorithms-Debug-3429e41d75d82658c1d4.json",
+					"name" : "LineDrawingAlgorithms",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/LineDrawingAlgorithms/cmake-build-debug",
+		"source" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/LineDrawingAlgorithms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
