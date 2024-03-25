@@ -1,0 +1,13 @@
+# ninja log v5
+0	1158	7331010438846641	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+1160	1332	7331010440121162	CircleDrawingAlgorithms.exe	610b06f72f55e837
+2	1396	7331027196183647	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+1396	1522	7331027197422054	CircleDrawingAlgorithms.exe	610b06f72f55e837
+3	877	7331035711123822	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+877	966	7331035711990210	CircleDrawingAlgorithms.exe	610b06f72f55e837
+3	880	7331036281106355	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+881	951	7331036281773061	CircleDrawingAlgorithms.exe	610b06f72f55e837
+2	1013	7331036895607335	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+1016	1083	7331036896294931	CircleDrawingAlgorithms.exe	610b06f72f55e837
+3	1055	7331065118019663	CMakeFiles/CircleDrawingAlgorithms.dir/main.cpp.obj	c1f19cda8935d15e
+1055	1182	7331065119259885	CircleDrawingAlgorithms.exe	610b06f72f55e837
