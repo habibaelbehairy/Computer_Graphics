@@ -43,6 +43,9 @@ void DrawCirclePolarAlgorithm(HDC hdc ,int xc,int yc,int r,COLORREF color);
  */
 void DrawCircleIterativePolarAlgorithm(HDC hdc ,int xc,int yc,int r,COLORREF color);
 
+void DrawCircleBresenham1Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color);
+
+void DrawCircleBresenham2Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color);
 /* Round double
  * Description: function attempts to round a double precision floating-point number to the nearest integer
  *              by adding 0.5 to the input number and returning the result.
@@ -134,7 +137,8 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
             hdc=GetDC(hwnd);
 //          DrawCircle(hdc, xc, yc, radius, RGB(0, 0, 0));
 //          DrawCirclePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
-            DrawCircleIterativePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
+//            DrawCircleIterativePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
+            DrawCircleBresenham2Algorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
             ReleaseDC(hwnd,hdc);
             break;
         default:                      /* for messages that we don't deal with */
@@ -219,6 +223,60 @@ void DrawCircleIterativePolarAlgorithm(HDC hdc ,int xc,int yc,int r,COLORREF col
         double temp=(x*c)-(y*s);
         y = (x * s) + (y * c);
         x = temp;
+        draw8points(hdc,xc,yc, Round(x),Round(y),color);
+    }
+}
+/* Bresenham Algorithm1 for circle
+ * Description:
+ * This code implements the Bresenham's Algorithm for drawing a circle efficiently on a 2D grid.
+ * The algorithm avoids the need for expensive trigonometric calculations by using integer arithmetic and taking advantage of the symmetry properties of circles.
+ * It starts from the topmost point of the circle and iteratively calculates the positions of points in 8 octants, incrementally drawing the circle.
+ * The decision parameter is updated based on the distance of the current point from the ideal circle, determining whether to move horizontally or diagonally.
+ * This approach minimizes computational overhead and produces accurate circle approximatio
+ * */
+void DrawCircleBresenham1Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color){
+    int x=0 , y=r;
+    draw8points(hdc,xc,yc, Round(x),Round(y),color);
+    int d=1-r;
+    while (x<y){
+        int d_ch1=(2*x)+3;
+        int d_ch2=2*(x-y)+5;
+        if (d<0){
+            d+=d_ch1;
+        }else{
+            y--;
+            d+=d_ch2;
+        }
+        x++;
+        draw8points(hdc,xc,yc, Round(x),Round(y),color);
+    }
+
+}
+/* Bresenham Algorithm1 for circle
+ * Description:
+ * This code implements a variation of Bresenham's Algorithm for drawing a circle efficiently on a 2D grid.
+ * Compared to the original algorithm, this version optimizes the calculation of decision parameters to further reduce computational overhead.
+ * It starts from the topmost point of the circle and iteratively calculates the positions of points in 8 octants, incrementally drawing the circle.
+ * The decision parameter is updated based on the distance of the current point from the ideal circle, determining whether to move horizontally or diagonally.
+ * This approach minimizes computational overhead and produces accurate circle approximations.
+ * */
+void DrawCircleBresenham2Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color){
+    int x=0 , y=r;
+    draw8points(hdc,xc,yc, Round(x),Round(y),color);
+    int d=1-r;
+    int d_ch1=3;
+    int d_ch2=5-(2*r);
+    while (x<y){
+        if (d<0){
+            d+=d_ch1;
+            d_ch2+=2;
+        }else{
+            d+=d_ch2;
+            d_ch2+=4;
+            y--;
+        }
+        x++;
+        d_ch1+=2;
         draw8points(hdc,xc,yc, Round(x),Round(y),color);
     }
 }
