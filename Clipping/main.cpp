@@ -19,14 +19,40 @@ union outCode {
     };
     unsigned all : 4;
 };
-
+/* Vertex
+ * Description:
+ * Vertex structure to store the x and y coordinates of the point
+ * x: x coordinate of the point
+ * y: y coordinate of the point
+ */
 struct Vertex{
     double x,y;
     Vertex(double x=0,double y=0):x(x),y(y){};
 };
 
+/* vlist
+ * Description:
+ * vlist is a vector of Vertex to store the list of vertices of the polygon
+ */
 typedef vector<Vertex>vlist;
+/* IsInFunc
+ * Description:
+ * IsInFunc is a function pointer to check if the point is inside the window area
+ * Parameters:
+ * v is the Vertex * edge is the x or y coordinate of the window edge (vertical or horizontal line)
+ * Returns:
+ * true if the point is inside the window area, false otherwise
+ */
 typedef bool (*IsInFunc)(Vertex& v,double edge);
+/* IntersectFunc
+ * Description:
+ * IntersectFunc is a function pointer to get the intersection point of the line outside the window with the window edge
+ * Parameters:
+ * vertex v1,v2 are the coordinates of the line
+ * edge is the x or y coordinate of the window edge (vertical or horizontal line)
+ * Returns:
+ * Vertex containing the intersection point of the line outside the window with the window edge
+ */
 typedef Vertex (*IntersectFunc)(Vertex& v1,Vertex& v2,double edge);
 
 
