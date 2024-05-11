@@ -1,0 +1,3 @@
+E:/Computer_Graphics/OpenGl/cmake-build-debug/CMakeFiles/OpenGl.dir
+E:/Computer_Graphics/OpenGl/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Computer_Graphics/OpenGl/cmake-build-debug/CMakeFiles/rebuild_cache.dir

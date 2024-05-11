@@ -782,8 +782,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading/cmake-build-debug",
-		"source" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading"
+		"build" : "E:/Computer_Graphics/Clipping/cmake-build-debug",
+		"source" : "E:/Computer_Graphics/Clipping"
 	},
 	"version" : 
 	{

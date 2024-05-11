@@ -50,8 +50,10 @@ void DrawCircleBresenham2Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color);
  * Description: function attempts to round a double precision floating-point number to the nearest integer
  *              by adding 0.5 to the input number and returning the result.
  */
+
 int Round( double num);
 
+void DrawSmileFace(HDC hdc ,int xc,int yc,int r,COLORREF color);
 
 /*  Make the class name into a global variable  */
 TCHAR szClassName[ ] = _T("CodeBlocksWindowsApp");
@@ -133,12 +135,14 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
         case WM_LBUTTONDBLCLK: // Handle double-click event
             xc=LOWORD(lParam);
             yc=HIWORD(lParam);
-            radius = sqrt(pow(xc-500, 2) + pow(yc-500, 2));
+//            radius = sqrt(pow(xc-500, 2) + pow(yc-500, 2));
+            radius=200;
             hdc=GetDC(hwnd);
 //          DrawCircle(hdc, xc, yc, radius, RGB(0, 0, 0));
 //          DrawCirclePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
 //            DrawCircleIterativePolarAlgorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
-            DrawCircleBresenham2Algorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
+//            DrawCircleBresenham2Algorithm(hdc, xc, yc, radius, RGB(0, 0, 0));
+            DrawSmileFace(hdc, xc, yc, radius, RGB(0, 0, 0));
             ReleaseDC(hwnd,hdc);
             break;
         default:                      /* for messages that we don't deal with */
@@ -279,4 +283,12 @@ void DrawCircleBresenham2Algorithm(HDC hdc ,int xc,int yc,int r,COLORREF color){
         d_ch1+=2;
         draw8points(hdc,xc,yc, Round(x),Round(y),color);
     }
+}
+
+void DrawSmileFace(HDC hdc ,int xc,int yc,int r,COLORREF color){
+    int X_coordinate = r * cos(45);
+    DrawCircleBresenham2Algorithm(hdc, xc, yc, r, RGB(0, 0, 0));
+    DrawCircleBresenham2Algorithm(hdc, xc+X_coordinate , yc-20 , 30, RGB(0, 0, 0));
+    DrawCircleBresenham2Algorithm(hdc,  xc-X_coordinate, yc-20 , 30, RGB(0, 0, 0));
+    DrawCircleBresenham2Algorithm(hdc, xc, yc+50, 50, RGB(0, 0, 0));
 }

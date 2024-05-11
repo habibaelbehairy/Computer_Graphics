@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading/cmake-build-debug"
+			"value" : "e:/Computer_Graphics/OpenGl/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "E:/Computer_Graphics/OpenGl/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading"
+			"value" : "E:/Computer_Graphics/OpenGl"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/FillingAndShading"
+			"value" : "C:/Program Files (x86)/OpenGl"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "FillingAndShading"
+			"value" : "OpenGl"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1270,7 +1270,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "FillingAndShading_BINARY_DIR",
+			"name" : "OpenGl_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1279,10 +1279,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading/cmake-build-debug"
+			"value" : "E:/Computer_Graphics/OpenGl/cmake-build-debug"
 		},
 		{
-			"name" : "FillingAndShading_IS_TOP_LEVEL",
+			"name" : "OpenGl_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1294,7 +1294,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "FillingAndShading_SOURCE_DIR",
+			"name" : "OpenGl_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/FCAI/Third_Year/Third_Year(2)/Graphics/ComputerGraphics/FillingAndShading"
+			"value" : "E:/Computer_Graphics/OpenGl"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
